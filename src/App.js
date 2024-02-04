@@ -148,8 +148,30 @@
 //   );
 // }
 
+// Example of Conditional rendering using '&&' operator
+function Cart() {
+  let items = ["Wireless Earbuds", "Mobile", "Cables", "Adaptor", "Batterys"];
+
+  return (
+    <>
+      <h1>Cart 😄</h1>
+      {items.length > 0 && <h2>Items in cart: {items.length}</h2>}
+
+      <h2>👇 Products</h2>
+      <ul>
+        {items.map((item) => {
+          return <li key={Math.random()}>{item}</li>;
+        })}
+      </ul>
+    </>
+  );
+}
 function App() {
-  return <></>;
+  return (
+    <>
+      <Cart />
+    </>
+  );
 }
 
 export default App;
