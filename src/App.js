@@ -174,10 +174,71 @@
 //   );
 // }
 
+// inline Styling in React
+// function App() {
+//   return (
+//     <>
+//       <h1
+//         style={{
+//           color: "red",
+//           fontSize: "50px",
+//           backgroundColor: "teal",
+//           textAlign: "center",
+//           width: "50%",
+//           margin: "0 auto",
+//         }}
+//       >
+//         Hello World
+//       </h1>
+//     </>
+//   );
+// }
+
+// External Styling in React
+// import "./index.css";
+// function App() {
+//   return (
+//     <>
+//       <h1>Hello World!</h1>
+//     </>
+//   );
+// }
+
+// Simple Counter using React State and useState Hook
+// import { useState } from "react";
+
+// const Counter = () => {
+//   let [count, setCount] = useState(0);
+
+//   let increment = () => {
+//     setCount(count + 1);
+//   };
+
+//   let decrement = () => {
+//     //count > 0 ? setCount(count - 1) : alert("Cannot go any lower");
+//     count > 0 && setCount(count - 1);
+//   };
+
+//   return (
+//     <>
+//       <h1>{count}</h1>
+//       <button onClick={increment}>➕</button>
+//       <button onClick={decrement}>➖</button>
+//     </>
+//   );
+// };
+// let App = () => {
+//   return (
+//     <>
+//       <Counter />
+//     </>
+//   );
+// };
+
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <h1>Hello World!</h1>
     </>
   );
 }

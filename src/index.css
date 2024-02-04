@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  background-color: crimson;
+  text-align: center;
+  width: 50%;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
