@@ -205,6 +205,7 @@
 // }
 
 // Simple Counter using React State and useState Hook
+// using useState with numbers
 // import { useState } from "react";
 
 // const Counter = () => {
@@ -235,12 +236,79 @@
 //   );
 // };
 
-function App() {
-  return (
-    <>
-      <h1>Hello World!</h1>
-    </>
-  );
-}
+// Simple Name Changing using React State and useState Hook
+// using useState with strings
+// import { useState } from "react";
+
+// function UserName() {
+//   let [username, setUsername] = useState("Unknow");
+
+//   let ChangeName = () => {
+//     let input = document.querySelector("#input");
+//     setUsername(input.value);
+//   };
+
+//   return (
+//     <>
+//       <h1>{username}</h1>
+//       <input type="text" placeholder="Enter your name" id="input" />
+//       <button onClick={ChangeName}>Change Name</button>
+//     </>
+//   );
+// }
+
+// function App() {
+//   return (
+//     <>
+//       <UserName />
+//     </>
+//   );
+// }
+
+//using useState with arrays
+// import { useState } from "react";
+// function App() {
+//   let [friends, setFriends] = useState(["Bhatti", "Fahad", "Zaidi"]);
+
+//   let AddOne = () => {
+//     let input = document.querySelector("input");
+//     setFriends([...friends, input.value]);
+//     // setFriends(friends.push(input.value)); this is a wrong approach (Error friends.map is not a function)
+//   };
+
+//   let RemoveOne = () => {
+//     let input = document.querySelector("input");
+//     setFriends(
+//       friends.filter((item) => {
+//         return item !== input.value;
+//       })
+//     );
+//   };
+
+//   return (
+//     <>
+//       <div>
+//         <h3>👇 Friends List</h3>
+//         <ul>
+//           {friends.map((friend) => (
+//             <li key={Math.random()}>{friend}</li>
+//           ))}
+//         </ul>
+//       </div>
+//       <div>
+//         <input
+//           type="text"
+//           placeholder="Enter friends name"
+//           autoComplete="off"
+//         />
+//         <button onClick={AddOne}>Add Friend</button>
+//         <button onClick={RemoveOne}>Remove Friend</button>
+//         {/* <button onClick={UpdateOne}>Update Friend</button> Not implemented*/}
+//       </div>
+//     </>
+//   );
+// }
+
+let App = () => {};
 
 export default App;
