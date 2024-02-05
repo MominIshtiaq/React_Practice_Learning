@@ -402,11 +402,52 @@
 //   );
 // }
 
+// ContextAPI Example {One of the way to solve the problem of props drilling but it is not a good practice}
+// {if you want to sent another piece of data you have to create another createContext and export it in provider and consumer}
+// import ComponentA from "./ComponentA";
+// import { createContext } from "react"; // 1. Import createContext
+// export const Data = createContext(); // 2. Create an instance of createContext
+// export const Data1 = createContext();
+
+// function App() {
+//   const name = "Momin Ishtiaq";
+//   const age = 18;
+//   return ( //3. Wrap our component to which we want to sent our data to inside Data.Provider Component
+//     <>
+//       <Data.Provider value={name}>
+//         <Data1.Provider value={age}>
+//           <ComponentA />
+//         </Data1.Provider>
+//       </Data.Provider>
+//     </>
+//   );
+// }
+
+// useContext hook
+// import ComponentB from "./ComponentB";
+// import { createContext } from "react";
+// export const Data = createContext();
+// export const Data1 = createContext();
+// function App() {
+//   const name = "Momin Ishtiaq";
+//   const age = 18;
+//   return (
+//     <>
+//       <Data.Provider value={name}>
+//         <Data1.Provider value={age}>
+//           <ComponentB />
+//         </Data1.Provider>
+//       </Data.Provider>
+//     </>
+//   );
+// }
+
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <h1>Hello World</h1>
     </>
   );
 }
+
 export default App;
