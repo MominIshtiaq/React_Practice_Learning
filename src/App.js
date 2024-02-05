@@ -338,6 +338,70 @@
 //   );
 // };
 
+// useEffect in React
+// import { useEffect, useState } from "react";
+// function App() {
+//   let [value, setValue] = useState(0);
+// useEffect
+// 1. useEffect inner code executes when the page renders for the first time.
+// 2. Conditional execution of the useEffect
+// 3. Dependency List
+
+// useEffect(() => {
+//   console.log("Hello");
+//   document.title = `You clicked ${value} times`;
+// });
+
+// Example of conditional execution of useEffect
+// useEffect(() => {
+//   document.title = `You clicked ${value} times`;
+//   if (value > 5) {
+//     console.log("Hello");
+//     document.querySelector("h1").style.color = "red";
+//   }
+// });
+
+// Example of Dependency List
+//   useEffect(() => {
+//     console.log("Hello");
+//     document.title = `You clicked ${value} times`;
+//   }, [value]);
+
+//   return (
+//     <>
+//       <h1>{value}</h1>
+//       <button onClick={() => setValue(value + 1)}>➕</button>
+//     </>
+//   );
+// }
+
+// Example of useEffect {useEffect is good to use for fetching data}
+// import { useState, useEffect } from "react";
+// function App() {
+//   let [data, setData] = useState([]);
+
+//   useEffect(() => {
+//     async function getData() {
+//       const response = await fetch(
+//         "https://jsonplaceholder.typicode.com/posts"
+//       );
+//       const data = await response.json();
+//       setData(data);
+//     }
+
+//     getData();
+//   }, []);
+//   return (
+//     <>
+//       <ul>
+//         {data.map((item) => (
+//           <li key={Math.random()}>{item.title}</li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+// }
+
 function App() {
   return (
     <>
