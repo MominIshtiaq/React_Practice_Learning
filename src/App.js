@@ -273,7 +273,7 @@
 //   let AddOne = () => {
 //     let input = document.querySelector("input");
 //     setFriends([...friends, input.value]);
-//     // setFriends(friends.push(input.value)); this is a wrong approach (Error friends.map is not a function)
+// setFriends(friends.push(input.value)); this is a wrong approach (Error friends.map is not a function)
 //   };
 
 //   let RemoveOne = () => {
@@ -309,6 +309,40 @@
 //   );
 // }
 
-let App = () => {};
+// Form in react
+// import { useState } from "react";
+// let App = () => {
+//   let [username, setUsername] = useState("");
+//   let [hero, setHero] = useState("Form Demo");
 
+//   let handleChange = (event) => {
+//     setUsername(event.target.value);
+//   };
+
+//   let handleForm = (event) => {
+//     event.preventDefault();
+//     setHero(username);
+//     setUsername("");
+//   };
+
+//   return (
+//     <>
+//       <h1>{hero}</h1>
+//       <form onSubmit={handleForm}>
+//         {/*<input type="text" value="Hello"/> this is an example of uncontrolled component*/}
+//         {/* <input type="text" value={username}/> this is also an example of controlled component*/}
+//         <input type="text" name={username} onChange={handleChange} />
+//         <button>Submit</button>
+//       </form>
+//     </>
+//   );
+// };
+
+function App() {
+  return (
+    <>
+      <h1>Hello World!</h1>
+    </>
+  );
+}
 export default App;
